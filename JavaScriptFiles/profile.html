@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../cssFiles/profile.css" />
+    <script src="../javaScriptFiles/profile.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="position-relative">
+      <div class="bg-image rounded-7 shadow-5">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          style="
+            opacity: 1;
+            width: 100%;
+            height: 40px;
+            fill: #8490ff;
+            transform: rotateY(0deg);
+          "
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 side-border"></div>
+        <div class="col-md-8 profile-section">
+          <h2 id="heading">Let's complete your profile</h2>
+          <p id="paragraph">It will help us to know more about you!</p>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-5">
+              <select
+                name="gender"
+                id="gender"
+                placeholder="Choose Gender"
+                class="form-control"
+              >
+                <option value="Male" disabled selected>Choose Gender</option>
+                <option value="Male">Male</option>
+                <option value="Male">Female</option>
+                <option value="Male">Others</option>
+              </select>
+              <input
+                type="date"
+                class="form-control"
+                id="selectedDate"
+                placeholder="Date of Birth"
+                required
+              />
+              <div class="row">
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="selectWeight"
+                    placeholder="Your Weight"
+                    required
+                  />
+                </div>
+                <div class="col-md-2 indication">
+                  <div>KG</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Height"
+                    id="selectHeight"
+                    required
+                  />
+                </div>
+                <div class="col-md-2 indication">
+                  <div>CM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-3">
+              <div class="btn-content">
+                <input type="submit" class="btn btn-track" value="Next" onclick="next()">
+              </div>
+            </div>
+        </div>
+        <div class="col-md-2 side-border"></div>
+      </div>
+    </div>
+  </body>
+</html>

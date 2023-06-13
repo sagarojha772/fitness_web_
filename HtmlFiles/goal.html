@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../cssFiles/goal.css" />
+    <title>Your goal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="box-left">
+          <h2 id="heading">What is Your Goal?</h2>
+          <p id="paragraph">
+            It will help us to choose a best program for you.
+          </p>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4" id="box">
+              <img src="../images/login2.png" alt="" id="setimage" />
+            </div>
+            <div class="col-md-4" id="Written-content">
+              <h2 class="headingbottom" id="heading1">Full Workout</h2>
+              <p id="paragraph1" style="text-align: start">
+                Full-body workouts generally yield a higher total energy
+                expenditure per session (i.e., you burn more calories). It's no
+                big deal if you miss a workout. If you train three times per
+                week and miss one workout, you've already worked all of your
+                muscle groups twice.
+              </p>
+            </div>
+          </div>
+          <div class="btn-content">
+            <button type="button" class="btn btn-track" id="countbtn">
+              <center>Confirm</center>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const clickcount = document.getElementById("countbtn");
+      const imagechange = document.getElementById("setimage");
+      const headingChange = document.getElementById("heading1");
+      const paraChange = document.getElementById("paragraph1");
+      count = 0;
+      clickcount.onclick = function () {
+        count++;
+        if (count == 1) {
+          imagechange.removeAttribute("src");
+          imagechange.setAttribute("src", "../images/login3.png");
+          headingChange.innerHTML = "Lower Workout";
+          paraChange.innerHTML = "Both the upper/lower training program and the push/pull/legs training program have equally effective methods of developing the exerciser's body – and, at the end of the day, they are similar enough that it is simply a matter of personal preference as to which program is most appropriate.";
+        }
+        if (count == 2) {
+          imagechange.removeAttribute("src");
+          imagechange.setAttribute("src", "../images/login4.png");
+          headingChange.innerHTML = "ABS Workout";
+          paraChange.innerHTML = "The stomach muscles sometimes are called abs. Core exercises train the muscles in your core to work in harmony. This leads to better balance and steadiness, also called stability. Stability is important whether you're on the playing field or doing regular activities.";
+        }
+        if (count == 3) {
+          window.location = "login.html";
+        }
+      };
+    </script>
+  </body>
+</html>

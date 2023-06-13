@@ -1,0 +1,12 @@
+.service-box a{
+    font-size: 15px;
+    font-family: 'Poppins';
+    float: right;
+    margin-top: 1.5rem;
+    border: 1px solid #777;
+    background-color: #777;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-weight: 500;
+}

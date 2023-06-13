@@ -1,0 +1,74 @@
+.section-footer {
+    background: var(--heading);
+    transition: all 0.7s linear;
+}
+
+.section-footer h3 {
+    color: var(--white);
+    margin-bottom: 2.6rem;
+}
+
+.f-about {
+    color: #adadad;
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+    font-size: 1.6rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+    margin-right: 0.3rem;
+    font-size: 1.6rem;
+}
+
+.f-address p,
+.f-address p a {
+    font-style: normal;
+    color: #adadad;
+    font-size: 1.4rem;
+}
+
+.f-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+
+.f-social-icons .icons {
+    font-size: 3.5rem;
+    background-color: rgb(144 172 209 /20%);
+    display: inline-block;
+    padding: 1.2rem 1.6rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+    border: none;
+    cursor: pointer;
+}
+
+.f-credits {
+    text-align: center;
+    color: #adadad;
+    margin-top: -6rem;
+}
+
+.section-footer a:hover,
+.section-footer a:active {
+    color: var(--white);
+}

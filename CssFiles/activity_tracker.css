@@ -1,0 +1,281 @@
+:root {
+    --btnchange: #a55293;
+    --bla: black;
+    --shadowSupport: 0px 2rem 2rem 0 rgb(132 144 255 / 30%);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+}
+#heading{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'poppins';
+    color: black;
+    background-color: #a55293;
+    margin-left: 5rem;
+    height: 8vh;
+    width: 20vw;
+    padding-top: 5px;
+    padding-left: 3rem;
+    margin: 0;
+    border-radius: 15px;
+    margin-left: 5rem;
+}
+#tilt{
+    height: 10px;
+    width: 10px;
+    border-left:40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid #a55293;
+    margin-left: 10rem;
+}
+.container-target{
+    height: 60vh;
+    width: 90vw;
+    margin: auto;
+    box-shadow: var(--gradientSupport);
+    background-color: #e2e5fd;
+    border-radius: 22px;
+    border-radius: 50px;
+    margin-top: -4rem;
+}
+.upper-part{
+    display: inline-flex;
+    gap: 60rem;
+    margin-left: 25rem;
+    margin-top: 5rem;
+}
+#heading1{
+    font-size: 32px;
+    font-family: 'poppins', Times, serif;
+    font-weight: 700;
+    color: black;
+    /* opacity: 1; */
+}
+.btn-target{
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+}
+.lower-part{
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50rem;
+}
+.water-intake,.footsteps{
+    height: 150px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: var(--gradientSupport);
+    margin-top: 4rem;
+    border-radius: 50px;
+    display: inline-flex;
+}
+.water-intake{
+    margin-left: 21rem;
+}
+.image-waterintake,.image-footstep{
+    margin-top: 2rem;
+}
+#litre{
+    margin-top: 4rem;
+    margin-left: 2.3rem;
+    font-size: 29px;
+    color: #8490ff;
+    font-weight: 700;
+}
+#paragraph{
+    margin-left: 1rem;
+}
+
+/* workout section */
+.workout {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70rem;
+    height: 15vh;
+    width: 100vw;
+    /* margin: auto; */
+    background-color: #cdcdcd;
+    /* margin-left: 7rem; */
+    /* border-radius: 50px; */
+    opacity: 0.9;
+    /* margin-bottom: 5rem; */
+}
+
+#progress {
+    border-radius: 15px;
+}
+
+#workout-heading {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins', Times, serif;
+    margin-left: 10rem;
+    text-transform: capitalize;
+}
+
+.workout-dropdown option {
+    font-size: 20px;
+    color: black;
+    font-weight: 700px;
+    font-family: 'poppins', Times, serif;
+}
+.activity-progress-bar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    height: 55vh;
+    width: 90vw;
+    box-shadow: var(--shadowSupport);
+    margin-left: 7rem;
+}
+.empty-bar{
+    height: 40vh;
+    width: 3vw;
+    border-radius: 25px;
+    background-color: #cdcdcd;
+    /* margin-left: 5rem; */
+    box-shadow: var(--shadowSupport);
+}
+.empty-bar1{
+    padding-top: 7.5rem;
+}
+.fillbar1,.fillbar2,.fillbar3,.fillbar4, .fillbar5, .fillbar6, .fillbar7{
+    width: 3vw;
+    border-radius: 25px;
+}
+.fillbar1 {
+    height: 30vh;
+    background-color: #8490ff;
+}
+.fillbar2{
+    height: 25vh;
+    background-color:#a55293;
+}
+.empty-bar2{
+    padding-top: 11rem;
+}
+.fillbar3{
+    height: 20vh;
+    background-color: #8490ff;
+}
+.empty-bar3{
+    padding-top: 14.7rem;
+}
+.fillbar4{
+    height: 35vh;
+    background-color: #a55293;
+}
+.empty-bar4{
+    padding-top: 3.5rem;
+}
+.fillbar5{
+    height: 30vh;
+    background-color: #8490ff;
+}
+.empty-bar5{
+    padding-top: 7.5rem;
+}
+.fillbar6{
+    height: 25vh;
+    background-color: #a55293;
+}
+.empty-bar6{
+    padding-top: 11rem;
+}
+.fillbar7{
+    height: 15vh;
+    background-color: #8490ff;
+}
+.empty-bar7{
+    padding-top: 18.5rem;
+}
+.weekdays{
+    margin-left: .5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight:900;
+    font-family: 'poppins', Times, serif;
+    color: #777;
+}
+
+/* latest activity section start here */
+.latest-activity-header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #8490ff;
+    /* border-radius: 50px; */
+    display: inline-flex;
+    align-items: center;
+    /* margin-left: 7rem; */
+    gap: 100rem;
+    /* margin-bottom: 5rem; */
+}
+
+.latestactivity-heading {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins', Times, serif;
+    color: black;
+    text-transform: capitalize;
+}
+
+.latest-activity-button {
+    height: 5rem;
+    width: 10rem;
+    background-color: #a55293;
+    border-radius: 40px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.8rem;
+}
+
+.latest-activity-button:hover {
+    box-shadow: var(--shadowSupport);
+}
+.latest-activity-testomonial{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    height:25vh;
+    width: 100vw;
+    margin-bottom: 1.3rem;
+}
+.drinking-water{
+    display: inline-flex;
+    align-items: center;
+    box-shadow: var(--shadowSupport);
+    width: 25vw;
+    height: 15vh;
+    border-radius: 30px;
+}
+.image-content{
+    margin-left: 1rem;
+    border: 4px solid cyan;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.data-content h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: #777;
+    font-family: 'poppins', Times, serif;
+    text-transform: capitalize;
+    margin-right: 2rem;
+}
+.btn-content i{
+    color: #777;
+    cursor: pointer;
+    font-weight: 700;
+}

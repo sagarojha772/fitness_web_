@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../cssFiles/welcome.css" />
+    <title>Welcome page</title>
+  </head>
+  <body>
+    <div class="position-relative">
+      <div class="hero-section">
+        <div class="bg-image rounded-7 shadow-5">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 250 120"
+            preserveAspectRatio="none"
+            style="
+              width: 100%;
+              height: 280px;
+              fill: #8490ff;
+              background-attachment: fixed;
+              transform: rotateY(180deg);
+            "
+          >
+            <path d="M1200 0L0 0 892.25 114.72 1200 0z"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="section-hero-data" id="shiftupward">
+            <div class="swiper-client-msg">
+              <p class="hero-para" id="quote"></p>
+              <h3 class="hero-top-data-heading" id="author"></h3>
+              <p class="hero-top-data" id="title"></p>
+            </div>
+          </div>
+          <h2 id="motivation">Motivational Quotes</h2>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <h2 id="heading">Welcome, Name</h2>
+            <p id="paragraph">
+                You are all set now, let's reach your goals together with us.
+            </p>
+          <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-1" id="box-left"></div>
+            <div class="col-md-8" id="box">
+              <img src="../images/welcome.svg" alt="welcome" height="300px" width="400px" style="margin:3rem 0 0 5rem;">
+            </div>
+            <div class="col-md-1" id="box-right"></div>
+          </div>
+          </div>
+          <div class="btn-content">
+            <button type="button" class="btn btn-track" onclick = home()>
+              <center>go to home</center>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javaScriptFiles/goal.js"></script>
+  </body>
+</html>
+<script>
+  function home(){
+    window.location = "../htmlFiles/newHonmepage.html"
+  }
+</script>

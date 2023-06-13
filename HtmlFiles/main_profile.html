@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="images/biodata.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../cssFiles/homepage.css" />
+    <link rel="stylesheet" href="../cssFiles/main_profile.css" />
+    <title>Main Profile</title>
+  </head>
+  <body>
+    <header class="header hero-header">
+      <img src="../images/logo1.png" alt="Main logo" class="logo" id="home" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a href="../htmlFiles/newHonmepage.html" class="navbar-link home-link">Home</a></li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">Plans</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="navbar-link portfolio-link"
+              >contact</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="navbar-link contact-link">
+              <i class="fa-solid fa-bell fa-1x"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+        <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+      </div>
+    </header>
+    <div class="container-main">
+      <div class="image-content">
+        <img
+          src="../images/gp.png"
+          alt="can't load"
+          height="100px"
+          width="100px"
+        />
+      </div>
+      <div class="data-content">
+        <h2 id="heading">Stefani Wong</h2>
+        <p id="paragraph1">Lose a Fat Program</p>
+      </div>
+      <div class="btn-content">
+        <button type="button" class="btn btn-edit">Edit</button>
+      </div>
+    </div>
+    <div class="container-hwa">
+      <div class="height">
+        <h3 class="headingpart">180 CM</h3>
+        <p id="paragraph">Height</p>
+      </div>
+      <div class="weight">
+        <h3 class="headingpart">65 KG</h3>
+        <p id="paragraph">Weight</p>
+      </div>
+      <div class="age">
+        <h3 class="headingpart">22 yo</h3>
+        <p id="paragraph">Age</p>
+      </div>
+    </div>
+    <div class="container-account">
+      <div class="firstpart-account">
+        <div class="account-heading">
+          <h3 id="heading">account</h3>
+        </div>
+        <div class="account-content">
+          <div class="personal-data">
+            <div class="personal-data-image">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="personal-data-text">
+              <p class="paragraph-account">Personal Data</p>
+            </div>
+            <div class="personal-data-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <br />
+          <div class="achievements-data">
+            <div class="achievements-data-image">
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="achievements-data-text">
+              <p class="paragraph-account">achievements</p>
+            </div>
+            <div class="achievements-data-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <br />
+          <div class="activity-history-data">
+            <div class="activity-history-image">
+              <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div class="activity-history-text">
+              <p class="paragraph-account">activity-history</p>
+            </div>
+            <div class="activity-history-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <br />
+          <div class="workout-progress-data">
+            <div class="workout-progress-image">
+              <i class="fa-solid fa-bars-progress"></i>
+            </div>
+            <div class="workout-progress-text">
+              <p class="paragraph-account">workout-progress</p>
+            </div>
+            <div class="workout-progress-btn">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondpart-account">
+        <div class="notifications">
+          <div class="notifications-heading">
+            <h3 id="heading">notifications</h3>
+          </div>
+          <div class="notifications-content">
+            <div class="notifications-data">
+              <div class="notifications-image">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="notifications-text">
+                <p class="paragraph-account">Pop-up Notifications</p>
+              </div>
+              <div class="workout-progress-btn">
+                <!--toggle button start from here-->
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="others">
+          <div class="others-heading">
+            <h3 id="heading">others</h3>
+          </div>
+          <div class="others-content">
+            <div class="personal-data">
+              <div class="personal-data-image">
+                <i class="fa-regular fa-address-book"></i>
+              </div>
+              <div class="personal-data-text">
+                <p class="paragraph-account">Contact us</p>
+              </div>
+              <div class="personal-data-btn" id="contactus-btn">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="personal-data">
+              <div class="personal-data-image">
+                <i class="fa-sharp fa-regular fa-lock"></i>
+              </div>
+              <div class="personal-data-text">
+                <p class="paragraph-account">Privacy Policy</p>
+              </div>
+              <div class="personal-data-btn" id="privacy-btn">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="personal-data">
+              <div class="personal-data-image">
+                <i class="fa-sharp fa-regular fa-gear"></i>
+              </div>
+              <div class="personal-data-text">
+                <p class="paragraph-account">Setting</p>
+              </div>
+              <div class="personal-data-btn">
+                <i class="fa-solid fa-angle-right" id="setting-btn"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer section starts here-->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p style="color: white; font-size: 1.3rem">
+            Get in the groove of fitness with us.
+          </p>
+          <p>
+            A fitness website is a place to introduce people to the fitness
+            parlour and philosophy and any special focuses. Besides these, a
+            site can achieve so much more.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#biodata">About</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#section-service">Services</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#portfolio">Plans</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">GYM (Basic & Advanced)</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">YOGA + ZUMBA</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">MEDITATION</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">ZUMBA</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span> <i class="fa-solid fa-location-dot"></i> </span
+                >Sultanpur,India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+917388449633">+91 7388449633 </a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:umairshaikh1898@gmail.com"
+                  >umairshaikh1898@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <!--icons-->
+      <div class="container grid">
+        <div class="f-social-icons">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-github icons"></i
+          ></a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright @2022 All rights reserved | This template is designed by
+            <span id="name-target">Fitness Group.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../cssFiles/login.css" />
+    <script src="../javaScriptFiles/login.js"></script>
+    <title>Fitness Studio login page</title>
+  </head>
+  <body>
+    <div class="position-relative">
+      <div class="bg-image rounded-7 shadow-5">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          style="
+            opacity: 1;
+            width: 100%;
+            height: 40px;
+            fill: #8490ff;
+            transform: rotateY(0deg);
+          "
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h4 id="paragraph">Hey There,</h4>
+        <h2 id="heading">Welcome Back</h2>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          autocomplete="none"
+          required
+        />
+        <input
+          type="Password"
+          class="form-control"
+          placeholder="Password"
+          autocomplete="none"
+          required
+          id="password1"
+        />
+        <center>
+          <a href="#" id="forget_password">Forget Your Password?</a>
+        </center>
+        <div class="btn-content">
+          <button type="submit" class="btn btn-track" onclick="loginbtn()">
+            <center>Login</center>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+                <div class="row">
+            <div class="col-md-2 col-xs-2"></div>
+            <div class="col-md-4 col-xs-4" id="left-line"> </div>
+            <span class="col-md-1 col-xs-1" class="or" id="heading">or</span>
+            <div class="col-md-4 col-xs-4" id="right-line"> </div>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-1" class="out-logo">
+                <div class="google-logo logo">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="google logo" class="image-icons" height="40px" width="40px"> 
+                </div>
+            </div>
+                <div class="col-md-1">
+                    <div class="facebook-logo logo">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-color-icon.png" alt="facebook logo" class="image-icons" height="40px" width="40px">
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-3"></div>
+            <div class="col-md-6 col-xs-6" class="heading-login">
+                <h3 id="heading" class="login_bottom">Don't have an account yet? <a href="register.html" id="ancor">Register</a></h3>
+            </div>
+        </div>
+      </div>
+        </div>
+    </div>
+  </body>
+</html>

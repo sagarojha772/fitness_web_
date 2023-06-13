@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="images/biodata.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../cssFiles/homepage.css" />
+    <link rel="stylesheet" href="../cssFiles/newHomepage.css" />
+    <link rel="stylesheet" href="../cssFiles/workout_tracker1.css" />
+    <title>Workout Tracler</title>
+  </head>
+  <body>
+    <!--header section starts here-->
+    <header class="header hero-header">
+      <img src="../images/logo1.png" alt="Main logo" class="logo" id="home" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a href="../htmlFiles/newHonmepage.html" class="navbar-link home-link">Home</a></li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">Plans</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="navbar-link portfolio-link"
+              >contact</a
+            >
+          </li>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+        <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+      </div>
+    </header>
+    <!-- header section ends here-->
+    <div class="main-workout-container">
+      <div class="workout-container">
+        <div class="workout-heading">
+          <h3 class="heading">Workout Tracker</h3>
+        </div>
+        <div class="workout-graph-content">
+          <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+          <script>
+            const xValues = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            new Chart("myChart", {
+              type: "line",
+              data: {
+                labels: xValues,
+                datasets: [
+                  {
+                    data: [
+                      300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100,
+                    ],
+                    borderColor: "white",
+                    fill: false,
+                  },
+                ],
+              },
+              options: {
+                legend: { display: false },
+              },
+            });
+          </script>
+          <div class="workout-tracker">
+            <div class="current-date" id="datehere">
+              <script>
+                const days = [
+                  "Sunday",
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ];
+                const months = [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                  "August",
+                  "September",
+                  "October",
+                  "November",
+                  "December",
+                ];
+                const date = new Date();
+                let day = date.getDate();
+                let dayWords = date.getDay();
+                let currentDate = date.getDate();
+                let month = date.getMonth() + 1;
+                let year = date.getFullYear();
+                console.log(day);
+                console.log(days[dayWords]);
+                console.log(months[month]);
+                const putDate = document.getElementById("datehere");
+                putDate.innerHTML = `<h3 id="newdate">${days[dayWords]}, ${day} ${months[month]}</h3>`;
+              </script>
+              <div id="dataofcontent">upper body workout</div>
+              <div class="slidegraph">
+                <div class="fillslidegraph"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="target">
+          <div class="text">
+            <h3 id="heading">Daily Workout Schedule</h3>
+          </div>
+          <div class="rightvalue">
+            <button type="button" class="btn" id="check">Check</button>
+          </div>
+        </div>
+        <div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content1">
+    <div class="modal-header1">
+      <span class="close1">&times;</span>
+      <h2>Daily workout Schedule</h2>
+    </div>
+    <div class="modal-body1">
+    </div>
+    <div class="modal-footer1">
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <!--upcoming workout section start here-->
+    <div class="latest-workouts">
+      <div class="latestworkout-heading">
+        <h3 id="heading">Upcoming Workouts</h3>
+      </div>
+      <div class="latest-wrokout-button" style="padding-top:0.3rem;">
+        <span>see more</span>
+      </div>
+    </div>
+    <br />
+    <!--upcoming workout section ends here-->
+
+    <!--upcoming workout content section start here-->
+    <div class="latest-workout-data">
+      <div class="fullbodyworkout">
+        <div class="picture">
+          <img
+            src="../images/fullbody.png"
+            alt="not loaded"
+            height="100px"
+            width="100px"
+            style="border-radius: 50%"
+            class="imgdata"
+          />
+        </div>
+        <div class="progressreport">
+          <h3 id="headingprogress">Full Body Workout</h3>
+          <p id="paragraph2">Today, 03:00 PM</p>
+        </div>
+        <div class="progressbtn">
+          <div class="bodybtn">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="lowerbodyworkout">
+        <div class="picture">
+          <img
+            src="../images/lowerbody.png"
+            alt="not loaded"
+            height="100px"
+            width="100px"
+            style="border-radius: 50%"
+            class="imgdata"
+          />
+        </div>
+        <div class="progressreport">
+          <h3 id="headingprogress">Lower Body Workout</h3>
+          <p id="paragraph2">June 05, 2.00 PM</p>
+        </div>
+        <div class="progressbtn">
+          <div class="bodybtn">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="abworkout">
+        <div class="picture">
+          <img
+            src="../images/abs.png"
+            alt="not loaded"
+            height="100px"
+            width="100px"
+            style="border-radius: 50%"
+            class="imgdata"
+          />
+        </div>
+        <div class="progressreport">
+          <h3 id="headingprogress">Abs Workout</h3>
+          <p id="paragraph2">Yesterday, 03:15 PM</p>
+        </div>
+        <div class="progressbtn">
+          <div class="bodybtn">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Upcoming workout section ends here-->
+    <!--what do you want to train starts here-->
+    <div class="train-main">
+    <!-- what do you want to train ends here-->
+    <section class="section section-freelancing">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>what do you want to train <span>?</span></h2>
+        <p>
+            We are providing lot's of traing, You can see by clicking on view more.
+        </p>
+        <button class="btn" id="myBtn">View more</button>
+      </div>
+<!--Modal starts from here-->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close btn-close">&times;</span>
+      <h3 class="heading" style="color:black; margin-bottom:1rem;">What Do You Want To Train</h3>
+    </div>
+    <div class="modal-body">
+        <div class="box-container">
+            <div class="text-box-container">
+                <h3 class="heading">Full Body Workout</h3>
+                <p class="paragraph">11 Exercises | 32 mins</p>
+                <div class="btn-viewmore" id="fullbodyworkout" style="margin-left:5.5rem;">view more</div>
+            </div>
+            <div class="image-box-conatiner">
+                <img src="../images/fullbody.png" alt="can't load" height="100px" width="100px">
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="text-box-container">
+                <h3 class="heading">Lower Body Workout</h3>
+                <p class="paragraph">12 Exercises | 40 mins</p>
+                <div class="btn-viewmore" id="lowerbodyworkout">view more</div>
+            </div>
+            <div class="image-box-conatiner">
+                <img src="../images/fullbody.png" alt="can't load" height="100px" width="100px">
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="text-box-container">
+                <h3 class="heading">ABS Workout</h3>
+                <p class="paragraph">7 Exercises | 20 mins</p>
+                <div class="btn-viewmore" id="absworkout" style="margin-left:2.5rem;">view more</div>
+            </div>
+            <div class="image-box-conatiner">
+                <img src="../images/fullbody.png" alt="can't load" height="100px" width="100px">
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+
+</div>
+<!--modal ends from here-->
+    </section>
+    <!--fotter starts here-->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p style="color: white; font-size: 1.3rem">
+            Get in the groove of fitness with us.
+          </p>
+          <p>
+            A fitness website is a place to introduce people to the fitness
+            parlour and philosophy and any special focuses. Besides these, a
+            site can achieve so much more.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#biodata">About</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#section-service">Services</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#portfolio">Plans</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">GYM (Basic & Advanced)</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">YOGA + ZUMBA</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">MEDITATION</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">ZUMBA</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span> <i class="fa-solid fa-location-dot"></i> </span
+                >Sultanpur,India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+917388449633">+91 7388449633 </a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:umairshaikh1898@gmail.com"
+                  >umairshaikh1898@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <!--icons-->
+      <div class="container grid">
+        <div class="f-social-icons">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-github icons"></i
+          ></a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright @2022 All rights reserved | This template is designed by
+            <span id="name-target">Fitness Group.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script src="../javaScriptFiles/workout_tracker1.js"></script>
+  </body>
+</html>

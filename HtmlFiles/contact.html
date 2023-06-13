@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="../images/Frame.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../cssFiles/homepage.css">
+    <script defer src="index.js"></script>
+    <title>Contact us</title>
+</head>
+<body>
+    <header class="header hero-header">
+      <img src="images/imglogo5.png" alt="Main logo" class="logo"  id="home"/>
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
+          <li><a href="/about.html" class="navbar-link about-link">About</a></li>
+          <li>
+            <a href="/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link portfolio-link"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#" class="navbar-link contact-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+       <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+       <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i> 
+      </div>
+    </header>
+
+<!--Contact section start-->
+
+    <section class="section section-contact">
+      <div class="container grid">
+        <h2 class="common-heading" id="contact">Contact us</h2>
+      </div>
+      <div class="section-contact-main contact-container">
+        <form action="https://formspree.io/f/xlevdned" method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input type="text" name="username" id="username" placeholder="Your name:" />
+            </div>
+            <div>
+              <label for="email"></label>
+              <input type="email" name="useremail" id="useremail" placeholder="Your Email:" onmouseover="mouse()" onmouseleave="mouseleave()" />
+            </div>
+          </div>
+          <div>
+            <label for="subject"></label>
+            <select name="subject" id="subject">
+                <option value="select1" selected disabled id="selectedOne">Choose Your Subject</option>
+                <option value="Upper Body Workout">Upper Body Workout</option>
+                <option value="lower Body Workout">Lower Body Workout</option>
+                <option value="abs Body Workout">Abs Workout</option>
+            </select>
+          </div>
+          <div><label for="textarea"></label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write your subject related content:"></textarea>
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit" class="btn">
+          </div>
+        </form>
+      </div>
+    </section>
+<script>
+    function mouse(){
+document.getElementById("useremail").setAttribute("placeholder","xyz@gmail.com");
+}
+function mouseleave(){
+document.getElementById("useremail").setAttribute("placeholder","Your Email:");
+}
+
+    const userName = document.getElementById("username");
+    const Email = document.getElementById("useremail");
+    const Subject = document.getElementById("subject");
+    const buttonClick = document.getElementById("submit");
+    const selectedOne = document.getElementById("selectedOne");
+    const areaText = document.getElementById("textarea");
+    buttonClick.addEventListener("click",value);
+    function value(){
+        userName.value="";
+        userName.setAttribute("value","Your Name:");
+        Email.value = "";
+        Email.setAttribute("value","Your Email:");
+        selectedOne.value = "Choose Your Subject";
+        selectedOne.setAttribute("selected","Choose Your Subject");
+        if(userName == " " || Email == " " || areaText == " "){
+            alert("fill your details:")
+        }
+    }
+
+</script>
+    <!--Footer section start-->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#biodata">About</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#section-service">Services</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">Web Design</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">Photography</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">React</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">Database</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">Python</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p><span>
+                <i class="fa-solid fa-location-dot"></i>
+              </span>Pune,India</p>
+            </div>
+            <div>
+              <p><span>
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <a href="tel:+917388449633">+91 7388449633
+                </a>
+              </p>
+            </div>
+            <div>
+              <p><span>
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <a href="mailto:umairshaikh1898@gmail.com">umairshaikh1898@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <!--icons-->
+      <div class="container grid">
+        <div class="f-social-icons">
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram icons"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin icons"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github icons"></i></a>
+        </div>
+        <div class="f-credits">
+          <p>Copyright @2022 All rights reserved | This template is made by <span id="name-target">Umair Ahmad</span></p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,356 @@
+.fullbody-container {
+    height: 30vh;
+    width: 90vw;
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    background-color: #a55293;
+    margin-left: 7rem;
+    border-radius: 50px;
+    gap: 5rem;
+}
+
+.fullbody-image-content {
+    border-radius: 50%;
+    background-color: #8490ff;
+    padding: 5px 5px;
+    box-shadow: var(--shadowSupport);
+    margin-left: 5rem;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 7.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+
+}
+
+#assignheight {
+    height: 10vh;
+    width: 20vw;
+    margin-left: 3.4rem;
+}
+
+.paragraph {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#assignpara-height {
+    height: 10vh;
+    width: 30vw;
+}
+
+.schedule-workout,
+.schedule-difficulty,
+.schedule-time {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: 6vh;
+    width: 40vw;
+    background-color: #fff;
+    box-shadow: var(--shadowSupport);
+    border-radius: 30px;
+}
+
+.schedule-workout-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.schdule-workout-image i,
+.schedule-time-image i {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.schedule-workout-btn i {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.schedule-workout-btn {
+    border: 3px solid black;
+    border-radius: 80px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.schdule-workout-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.schdule-workout-text .heading {
+    margin-left: -2rem;
+}
+
+.schdule-workout-text select,
+.schedule-workout-text input,
+.schedule-time-text input {
+    height: 4vh;
+    width: 16vw;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #c5caf6;
+    border-radius: 50px;
+    border-style: none;
+    border: 2px solid transparent;
+    padding: 2px 28px;
+}
+
+#difficulty {
+    margin-left: 4rem;
+}
+
+.schedule-time {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.schedule-time-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.schedule-time-text input {
+    margin-left: 3.2rem;
+}
+
+.schedule-workout {
+    /* margin-top: .5rem; */
+    margin-bottom: 1rem;
+}
+
+.schedule-time {
+    margin-bottom: 1rem;
+}
+
+/* need container start here */
+.need-container {
+    margin-top: 1rem;
+}
+
+.needy-things {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+
+.needy {
+    height: 25vh;
+    width: 17vw;
+    background-color: #fff;
+    box-shadow: var(--shadowSupport);
+    border-radius: 40px;
+    margin-left: -0.2rem;
+}
+
+.paragraph-need {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.needy img {
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.needy-heading {
+    height: 7vh;
+    width: 20vw;
+    background-color: #8490ff;
+    margin-left: 7rem;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 1rem 7rem;
+}
+
+/* need container ends here */
+
+/* exercises count start here */
+.exercises-content {
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(234, 233, 233);
+    gap: 110rem;
+    margin-top: 4rem;
+}
+
+.heading-exercises {
+    margin-top: -2rem;
+    font-size: 25px;
+}
+
+/* exercises count ends here */
+
+/* exercises indivisuals section starts here */
+.section-portfolio {
+    background: var(--bg);
+    transition: all 0.7 linear;
+}
+
+.section-portfolio p {
+    max-width: 50rem;
+}
+
+.p-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
+.portfolio-images {
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
+.portfolio-images img {
+    width: 80%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 80%;
+    height: 100%;
+    background: var(--gradientSupport);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+}
+
+.img-overlay:hover>.overlay {
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.img-overlay .common-heading {
+    margin: 0;
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+.img-overlay .common-heading::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.img-overlay .common-heading::after {
+    content: "";
+    position: absolute;
+    top: 115%;
+    left: 1rem;
+    min-width: 16rem;
+    height: .4rem;
+    background-color: var(--white);
+}
+
+.p-btn-active {
+    transform: translateY(-1rem);
+}
+
+.p-image-not-active {
+    display: none;
+}
+
+.p-btns {
+    margin-top: -5rem;
+}
+
+.common-para {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'poppins';
+    margin-top: 13rem;
+    margin-left: 13rem;
+    color: white;
+}
+
+/* exercises indivisuals section ends here */
+
+/* start workout button start here */
+.start-workout-btn {
+    margin-top: -6rem;
+    height: 6vh;
+    width: 50vw;
+    margin-left: 35rem;
+    /* background-color:#c5caf6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-workout-btn button {
+    border-radius: 20px;
+    width: 100vw;
+}
+
+.schedule-btn {
+    margin-left: 53rem;
+}
+
+.btn-set {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'poppins';
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.schedule-workout {
+    margin-top: 1rem;
+}
+*body{
+    font-family: 'poppins';
+}
+
+/* start workout button ends here */

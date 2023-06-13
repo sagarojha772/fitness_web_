@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/biodata.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link rel="stylesheet" href="../cssFiles/homepage.css" />
+    <link rel="stylesheet" href="../cssFiles/activity_tracker.css" />
+    <title>Activity tracker</title>
+  </head>
+  <body>
+    <header class="header hero-header">
+      <img src="../images/logo1.png" alt="Main logo" class="logo" id="home" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a href="../htmlFiles/newHonmepage.html" class="navbar-link home-link">Home</a></li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">Plans</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="navbar-link portfolio-link"
+              >contact</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="navbar-link contact-link">
+              <i class="fa-solid fa-bell fa-1x"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+        <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+      </div>
+    </header>
+    <div class="container">
+      <h3 id="heading">Activity Tracker</h3>
+      <div id="tilt"></div>
+    </div>
+    <div class="container-target">
+      <div class="upper-part">
+        <h3 id="heading1">Today Target</h3>
+        <div class="btn btn-target">+</div>
+      </div>
+      <br />
+      <div class="lower-part">
+        <div class="water-intake">
+          <div class="image-waterintake">
+            <img
+              src="../images/water.png"
+              alt="can't load"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <div class="data-waterintake">
+            <h3 id="litre">8L</h3>
+            <p id="paragraph">Water Intake</p>
+          </div>
+        </div>
+        <div class="footsteps">
+          <div class="image-footstep">
+            <img
+              src="../images/footsteps.png"
+              alt="can't load"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <div class="data-footsteps">
+            <h3 id="litre">2400</h3>
+            <p id="paragraph">Foot Steps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="workout-progress-section">
+      <div class="workout">
+        <div class="workout-heading">
+          <h3 id="workout-heading">Activity progress</h3>
+        </div>
+        <div class="workout-dropdown">
+          <select name="progress" id="progress" class="btn">
+            <option value="weekly" selected disabled>Weekly</option>
+            <option value="hourly">hourly</option>
+            <option value="select">monthly</option>
+            <option value="select">Yearly</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="activity-progress-bar">
+      <div class="empty-bar empty-bar1">
+        <div class="fillbar1"></div>
+        <h3 class="weekdays">Sun</h3>
+      </div>
+      <div class="empty-bar empty-bar2">
+        <div class="fillbar2"></div>
+        <h3 class="weekdays">Mon</h3>
+      </div>
+      <div class="empty-bar empty-bar3">
+        <div class="fillbar3"></div>
+        <h3 class="weekdays">Tue</h3>
+      </div>
+      <div class="empty-bar empty-bar4">
+        <div class="fillbar4"></div>
+        <h3 class="weekdays">Wed</h3>
+      </div>
+      <div class="empty-bar empty-bar5">
+        <div class="fillbar5"></div>
+        <h3 class="weekdays">Thu</h3>
+      </div>
+      <div class="empty-bar empty-bar6">
+        <div class="fillbar6"></div>
+        <h3 class="weekdays">Fri</h3>
+      </div>
+      <div class="empty-bar empty-bar7">
+        <div class="fillbar7"></div>
+        <h3 class="weekdays">Sat</h3>
+      </div>
+    </div>
+    <div class="latest-activity">
+      <div class="latest-activity-header">
+        <div class="latestactivity-heading">
+          <h3 id="workout-heading">latest Activity</h3>
+        </div>
+        <div class="latest-activity-button">
+          <span>see more</span>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="latest-activity-testomonial">
+        <div class="drinking-water">
+            <div class="image-content">
+                <img src="../images/fullbody.png" alt="can't load" height="80px" width="80px">
+            </div>
+            <div class="data-content">
+                <h3>Drinking 300ml Water</h3>
+                <p>About 3 min ago</p>
+            </div>
+            <div class="btn-content" style="font-size:4rem;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="eat-snack">
+        <div class="drinking-water">
+            <div class="image-content">
+                <img src="../images/fullbody.png" alt="can't load" height="80px" width="80px">
+            </div>
+            <div class="data-content">
+                <h3>Eat Snak (Fitbar)</h3>
+                <p>About 10 min ago</p>
+            </div>
+            <div class="btn-content" style="font-size:4rem; margin-left:4rem;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </div>
+        <div class="take-calori">
+        <div class="drinking-water">
+            <div class="image-content">
+                <img src="../images/fullbody.png" alt="can't load" height="80px" width="80px">
+            </div>
+            <div class="data-content">
+                <h3>Drinking 300ml Water</h3>
+                <p>About 3 min ago</p>
+            </div>
+            <div class="btn-content" style="font-size:4rem;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+<!--footer section start here-->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p style="color: white; font-size: 1.3rem">
+            Get in the groove of fitness with us.
+          </p>
+          <p>
+            A fitness website is a place to introduce people to the fitness
+            parlour and philosophy and any special focuses. Besides these, a
+            site can achieve so much more.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#biodata">About</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#section-service">Services</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#portfolio">Plans</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">GYM (Basic & Advanced)</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">YOGA + ZUMBA</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">MEDITATION</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">ZUMBA</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span> <i class="fa-solid fa-location-dot"></i> </span
+                >Sultanpur,India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+917388449633">+91 7388449633 </a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:umairshaikh1898@gmail.com"
+                  >umairshaikh1898@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <!--icons-->
+      <div class="container grid">
+        <div class="f-social-icons">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-github icons"></i
+          ></a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright @2022 All rights reserved | This template is designed by
+            <span id="name-target">Fitness Group.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

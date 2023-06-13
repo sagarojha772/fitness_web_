@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="shortcut icon" href="images/biodata.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+    <link rel="stylesheet" href="../cssFiles/homepage.css" />
+    <link rel="stylesheet" href="../cssFiles/abs_workout.css" />
+    <script defer src="../javaScriptFiles/abs_workout.js"></script>
+    <title>lower Body workout</title>
+  </head>
+  <body>
+    <!--header section starts here-->
+    <header class="header hero-header">
+      <img src="../images/logo1.png" alt="Main logo" class="logo" id="home" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li><a href="../htmlFiles/newHonmepage.html" class="navbar-link home-link">Home</a></li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">About</a>
+          </li>
+          <li>
+            <a href="/service.html" class="navbar-link service-link"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="navbar-link about-link">Plans</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="navbar-link portfolio-link"
+              >contact</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="navbar-link contact-link">
+              <i class="fa-solid fa-bell fa-1x"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-navbar-btn">
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline"></i>
+        <i class="fa-solid fa-xmark mobile-nav-icon" name="close-outline"></i>
+      </div>
+    </header>
+    <!--header section ends here-->
+    <!--full body content starts here-->
+    <div class="fullbody-container">
+      <div class="fullbody-image-content">
+        <img
+          src="../images/login3.png"
+          alt="can't load"
+          height="100px"
+          width="100px"
+        />
+      </div>
+      <div class="full-bodytext-content">
+        <h3 class="heading" id="assignheight" style="margin-left:2.1rem;">Abs Workout</h3>
+        <p class="paragraph" id="assignpara-height">7 Exercises | 20 mins | 250 Calories Burn</p>
+      </div>
+      <div class="fullbody-schedular">
+        <div class="schedule-workout">
+          <div class="schdule-workout-image">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <div class="schedule-workout-text">
+            <p class="paragraph">Schedule Workout Date</p>
+            <input type="date" value="10-08-2023" id="date" required>
+          </div>
+        </div>
+        <div class="schedule-time">
+            <div class="schedule-time-image">
+                <i class="fa-regular fa-business-time"></i>
+            </div>
+            <div class="schedule-time-text">
+                <p class="paragraph">Schedule Workout Time</p>
+                <input type="time" value="00:00" id="time" required>
+            </div>
+        </div>
+        <div class="schedule-difficulty">
+            <div class="schdule-workout-image">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="schdule-workout-text" id="schedule-workout-text">
+                <h3 class="paragraph" style="padding-left:6rem;">Difficulty</h3>
+                <select name="Beginner" id="difficulty" required>
+                    <option value="select" selected disabled>Select</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+        </div>
+        <div class="schedule-btn">
+          <button class="btn btn-set" onclick="fetchData()">set</button>
+        </div>
+      </div>
+    </div>
+<!--full body content ends here-->
+<!--You will need container starts here-->
+<div class="need-container">
+    <div class="need-heading">
+        <h3 class="heading">
+
+        </h3>
+    </div>
+        <div class="needy-heading">
+            You'll Need
+        </div>
+    <div class="needy-things">
+        <div class="needy">
+            <img src="../images/login3.png" alt="can't load" height="150px" width="150px">
+            <p class="paragraph paragraph-need">Barbel</p>
+        </div>
+        <div class="needy">
+            <img src="../images/login3.png" alt="can't load" height="150px" width="150px">
+            <p class="paragraph paragraph-need">Skipping Rope</p>
+        </div>
+        <div class="needy">
+            <img src="../images/login3.png" alt="can't load" height="150px" width="150px">
+            <p class="paragraph paragraph-need">Bottle 1 Litre</p>
+        </div>
+        <div class="needy">
+            <img src="../images/login3.png" alt="can't load" height="150px" width="150px">
+            <p class="paragraph paragraph-need">Air bike</p>
+        </div>
+        <div class="needy">
+            <img src="../images/login3.png" alt="can't load" height="150px" width="150px">
+            <p class="paragraph paragraph-need">Kettlebells</p>  
+        </div>
+    </div>
+</div>
+<div class="exercises-content">
+        <h3 class="heading heading-exercises">Exercises</h3>
+        <h3 class="heading heading-exercises" style="color:#777;">2 Sets</h3>
+</div>
+<!--You will need container ends here-->
+
+<!--exercises indivisual section starts here-->
+    <section class="section-portfolio section" id="portfolio-section">
+      <div class="p-btns">
+        <div class="btn p-btn" data-btn-num="1">set 1</div>
+        <div class="btn p-btn" data-btn-num="2">set 2</div>
+      </div>
+      <div class="container grid grid-three-column portfolio-images">
+        <div class="img-overlay p-btn--1 p-btn--5">
+          <img src="../images/blog1.jpeg" alt="My works 1" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2 p-btn--1">
+          <img src="../images/blog2.jpeg" alt="My works 2" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3 p-btn--1">
+          <img src="../images/blog2.jpeg" alt="My works 3" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--2 p-btn--1 p-btn--4">
+          <img src="../images/blog1.jpeg" alt="My works 4" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--3 p-btn--2 p-btn--1">
+          <img src="../images/blog2.jpeg" alt="My works 5" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+        <div class="img-overlay p-btn--6 p-btn--3 p-btn--4">
+          <img src="../images/blog5.jpeg" alt="My works 6" />
+          <div class="overlay">
+            <a href="#" class="common-para">know more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--exercises indivisual section ends here-->
+<!-- start workout button start here-->
+<div class="start-workout-btn">
+    <button type="button" class="btn btn-start-workout">Start Workout</button>
+</div>
+<!-- start workout button ends here-->
+    <!--footer section starts here-->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p style="color: white; font-size: 1.3rem">
+            Get in the groove of fitness with us.
+          </p>
+          <p>
+            A fitness website is a place to introduce people to the fitness
+            parlour and philosophy and any special focuses. Besides these, a
+            site can achieve so much more.
+          </p>
+        </div>
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#biodata">About</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#section-service">Services</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#portfolio">Plans</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">GYM (Basic & Advanced)</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">YOGA + ZUMBA</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">MEDITATION</a>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <a href="#">ZUMBA</a>
+            </li>
+          </ul>
+        </div>
+        <!--end-->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span> <i class="fa-solid fa-location-dot"></i> </span
+                >Sultanpur,India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+917388449633">+91 7388449633 </a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:umairshaikh1898@gmail.com"
+                  >umairshaikh1898@gmail.com
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <!--icons-->
+      <div class="container grid">
+        <div class="f-social-icons">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin icons"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-github icons"></i
+          ></a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright @2022 All rights reserved | This template is designed by
+            <span id="name-target">Fitness Group.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--footer section ends here-->
+  </body>
+</html>
